@@ -10,7 +10,7 @@ function App() {
 	
 	return (
     <>
-		<div className="flex flex-col items-center font-Prompt text-5xl mt-10 text-sky-400">เที่ยวไหนดี</div>
+		<head className="flex flex-col items-center font-Prompt text-5xl mt-10 text-sky-400">เที่ยวไหนดี</head>
 
 
     

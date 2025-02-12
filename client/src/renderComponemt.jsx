@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from "react";
-import axios from "axios";
+
 
 
 const DataFetchingComponent = () => {
@@ -43,21 +43,21 @@ const DataFetchingComponent = () => {
         
             <div className="w-full">
             <div className=" ">
-                <div className="flex flex-row justify-start items-center gap-10 w-full">
+                <body className="flex flex-row justify-start items-center gap-10 w-full">
                 <div className="object-cover w-96" key={index}><img className="rounded-3xl" src={data.photos[0]} alt="" /></div>
                 <div className="flex flex-col justify-between gap-2">
-            <div key={index} className="font-Prompt text-lg font-bold"> {data.title} </div>
-            <div key={index} className="font-Prompt text-sm whitespace-nowrap truncate w-96">{data.description}</div>
-            <div className="font-Prompt text-sky-600 underline text-sm hover:font-bold">อ่านต่อ</div>
+            <title key={index} className="font-Prompt text-lg font-bold"> {data.title} </title>
+            <p key={index} className="font-Prompt text-sm whitespace-nowrap truncate w-96">{data.description}</p>
+            <p className="font-Prompt text-sky-600 underline text-sm hover:font-bold">อ่านต่อ</p>
             <div className="flex flex-row gap-2">
-            <div className="font-Prompt text-sm">Tag:</div>
-            <div className="flex flex-row gap-2 font-Prompt text-sm hover:font-bold"> 
+            <span className="font-Prompt text-sm">Tag:</span>
+            <span className="flex flex-row gap-2 font-Prompt text-sm hover:font-bold"> 
             {data.tags.map((tag) => (
         <div  key={tag}> {tag} </div>
       ))}
                 
 
-                 </div>
+                 </span>
                  </div>
             
             <div className="flex flex-row gap-4">
@@ -66,7 +66,7 @@ const DataFetchingComponent = () => {
                 <div key={index} className="object-contain w-32"><img className="rounded-3xl" src={data.photos[3]} alt="" /></div>
             </div>
             </div>
-            </div>
+            </body>
             </div>
             </div>
            
